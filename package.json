@@ -1,0 +1,30 @@
+{
+  "name": "parking_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon lib/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudsonramon/parking_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudsonramon/parking_backend/issues"
+  },
+  "homepage": "https://github.com/rudsonramon/parking_backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.5"
+  }
+}

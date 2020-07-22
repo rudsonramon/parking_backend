@@ -7,14 +7,14 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watch",
     "start": "nodemon lib/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rudsonramon/parking_backend.git"
   },
-  "author": "",
+  "author": "Rudson Rodrigues",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rudsonramon/parking_backend/issues"
@@ -22,9 +22,12 @@
   "homepage": "https://github.com/rudsonramon/parking_backend#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
+    "nodemon": "^2.0.3",
+    "npm": "^6.14.5",
     "sequelize": "^5.21.5"
   }
 }

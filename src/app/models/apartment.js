@@ -9,25 +9,28 @@ const Apartments = sequelize.define(
       autoIncrement: false,
       field: 'apartment_id',
     },
+    apartment_block_id: {
+      type: DataTypes.TINYINT,
+      primaryKey: true,
+      autoIncrement: false,
+      field: 'apartment_block_id',
+    },
+    apartment_parking_id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: false,
+      field: 'apartment_parking_id',
+      allowNull: true,
+    },
     apartment_floor: {
       type: DataTypes.INTEGER,
       autoIncrement: false,
       field: 'apartment_floor',
     },
     apartment_size: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.TINYINT,
       autoIncrement: false,
       field: 'apartment_size',
-    },
-    apartment_block_id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: false,
-      field: 'apartment_block_id',
-    },
-    apartment_block_name: {
-      type: DataTypes.STRING,
-      autoIncrement: false,
-      field: 'apartment_block_name',
+      allowNull: true,
     },
   },
   {
